@@ -1,0 +1,73 @@
+.background {
+  background-image: url(assets/images/background-image);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url(assets/fonts/Orbitron-VariableFont_wght.ttf);
+  size: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-family: "Orbitron";
+  background-color: rgb(228, 185, 76);
+}
+
+h2 {
+  background-color: rgb(243, 224, 177);
+}
+
+.parallax {
+  background-image: url('assets/images/background-image.jpg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Orbitron";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.modal-dialog {
+  max-width: 62%;
+}
+
+
+.card {
+  min-height: 250px;
+}
+
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1008x;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1008px;
+}
+}

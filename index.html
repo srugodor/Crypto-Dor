@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryp-Dor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="parallax">
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">Crypto Coins</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="currenciesLink" type="button">Currencies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="reportsLink" type="button">Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="aboutLink" type="button">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="alert alert-danger" role="alert" style="display: none;" id="myAlert">
+        Please try again and if the error occurs again, try again later.
+    </div>
+
+    <div class="container" id="mainContent"></div>
+    <br> <br>
+    <div id="container" class="d-flex flex-wrap justify-content-center align-items-start"></div>
+
+    <div class="modal" tabindex="-1" id="selectedCoinsModal" role="dialog">
+        <div class="modal-dialog custom-modal-width" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Selected Coins for Reports</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" id="closeWindowButton"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="selectedCoinsModalBody">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="replaceButton" data-bs-dismiss="modal">Replace
+                        Coin</button>
+                    <button type="button" class="btn btn-secondary" id="cancelButton"
+                        data-bs-dismiss="modal">Cancel</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
