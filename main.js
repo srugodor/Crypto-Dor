@@ -293,7 +293,7 @@
             <h2 style="text-align:center">Our Team</h2>
             <div class="card-group">
                 <div class="card">
-                    <img src="assets/images/dorsrugo.jpg" class="card-img-top" alt="Dor Srugo">
+                    <img src="assets/images/dorsrugo.JPG" class="card-img-top" alt="Dor Srugo">
                     <div class="card-body">
                         <h5 class="card-title">Dor Srugo</h5>
                         <p class="card-text">CEO & Owner</p>
